@@ -1,18 +1,222 @@
-<!doctype html>
-<html>
-  <head>
-     <title>Floating Assignment - YOUR TITLE HERE</title>
-  </head>
-  <body>
-    <h1>Floating Assignment - Cheat Sheet<h1>
-      <p>This is a (very ugly) placeholder page for your WMC cheat sheet.
-        You can use it in any way suitable to fulfil your task.</p>
-      <ul>
-        This includes:
-        <li>Modify this file as needed</li>
-        <li>Replace the content of this file with your cheat sheet</li>
-        <li>Use it as overview page that links to separate pages for each topic</li>
-        <li>Add a menu bar</li>
-      </ul>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cheat Sheet</title>
+    <link stylesheet="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+    <p>        
+        Web Client:
+        The web client is also known as browser. It gets information from the web server (via the internet). The client serves
+        as application software (program designed to carry out a specific task) for accessing the world wide web. 
+        The client does things such as rendering, fancy GUI stuff and it requests a new page when required. <br/>
+    </p>
+
+    <p>
+        <br/>
+        Process:
+        A URL is entered to the browser, which retrieves information from the browser using the appropriate protocol.
+        Communication between the browser and the web server is encrypted for security/privacy reasons. Once the pages were 
+        retrieved, the rendering engine displays it on the users device. When a hyperlink is clicked, a new resource will be
+        opened. Most browsers have an internal cache to reduce loading times.
+    </p>
+
+    <p>
+        Web Server:<br/>
+        A webserver is a computer software with underlying hardware that accepts requests in HTTP or HTTPS. It can contain
+        pre-existing files (static content) or the content can be generated at the time of the request (dynamic content).
+        More information to be found below.<br/>
+        <br/>
+        The web server houses HTML content. <br/>
+        <br/>
+        The server side static houses files, which can be retrieved at some point. There are no scripts whatsoever in that type 
+        of webpage.<br/>
+        <br/>
+        Server side dynamics exist too, applying to sites that are powered by scripts to make them dynamic (kind of obvious).<br/> 
+        <br/>
+        Then you also have database driven webpages, which are scripted and have a database behind it. The scripting makes a 
+        query and receives data in return.<br/>
+    </p>
+
+    <p>
+        The internet was invented by Sir Tim Berners-Lee at the CERN (European Organization for Nuclear Research) at around
+        1989. He had the first World Wide Web Browser and a HTTP server ready by the end of 1990. He also founded the WWC
+        Consortium (W3C), which created XML (Extendible Markup Language). <br/>
+        <br/>
+        W3C recommended replacing HTML with XHTML, which failed and instead HTML5 was developed by global players.
+    </p>
+
+    <p>
+        'URL' is the abbreviation for Uniform Resource Locator, colloquially known as web address. The purposse of a URL is to
+        identify and locate resources, such as websites, using a protocol and the resource in a network. The syntax is simple:<br/>
+        <br/>
+        PROTOCOL :// PATH ? #<br/>
+        The paths are seperated with a slash, the '?' is a query and # is the fragment.<br/>
+    </p>
+
+    <p>
+        The correct doctype declaration is "!DOCTYPE html" (don't forget the greater/smaller characters).<br/>
+        <br/>
+        HTML elements have a starting tag, (name) and an ending tag. Void elements do not have end tags and can't house any 
+        content inside it. These elements have attributes and can't be nested.<br/>
+        <br/>
+        The id atribute is a unique ID for a HTML element and must be unique within the HTML document. This attribute is used 
+        to point to a specific style declaration in a style sheet. JavaScript also uses this to access and manipulate the 
+        element with the specific id.<br/> 
+        <br/>
+        <br/>
+        <b>DO NOT FORGET THE GREATER/SMALLER CHARS</b><br/>
+        Special tags are:<br/>
+        img src="IMAGE NAME"<br/>
+        a href="LINK" (TEXT)<br/>
+        meta (NAME)="TYPE"<br/>
+        <br/>
+        How to comment:<br/>
+        !-- (TEXT) --<br/>
+    </p>
+
+    <b>CSS</b><br/>
+
+    <p>
+        CSS stands for Cascading Style Sheets. <br/>
+        Every css rule has a selector, a value, a property and a declaration.<br/>
+        <br/>
+
+        h1 // SELECTOR<br/>
+        {<br/>
+            color (property): blue (value);<br/>
+        }<br/>
+        <br/>
+
+        WARNING!<br/>
+        The div element is only a placeholder in the following cases.<br/>
+        <br/>
+        Direct child: Selects all elements that are children of a specified element. (Selects all p's that are children of a div element)<br/>
+        div > p {color: blue;}<br/>
+        <br/>
+        Descendant: Selects all elements that are children of a specific element. (Selects all p's inside div elements)<br/>
+        div p {color: blue;}<br/>
+        <br/>
+        Adjacent sibling: Selects the first p element of a div element. <br/>
+        div + p {color: blue;}<br/>
+        <br/>
+        Sibling: Selects all elements that are siblings of a specific element. (Let's say you have 4 paragraphs. Two within a div tag, two not in a div tag. The two statements not within the div tag will have the color blue.)<br/>
+        div ~ p {color: blue;}<br/>
+        <br/>
+        Colors in a hexadecimal notation:<br/>
+        (opening) h1 style="color:#ff3813;" (closing) h1 <br/>
+        <br/>
+        Declaration for background image: <br/>
+        body{<br/>
+            background-image: url("yes.png");<br/>
+        }<br/>
+        <br/>
+        Text alignation (left, right, center, justify):<br/>
+        h1{<br/>
+            text-align: left;<br/>
+        } <br/>
+        <br/>
+        Text decoration (overline, underline, line-through):<br/>
+        h1{<br/>
+            text-decoration-line: overline;<br/>
+        }<br/>
+        <br/>
+        Text transformation (uppercase, lowercase, capitalize):<br/>
+        h1{<br/>
+            text-transform: uppercase;<br/>
+        }<br/>
+        <br/>
+        Font family declaration: <br/>
+        p.a{ <br/>
+            font-family: "serif"; <br/>
+        }<br/>
+        <br/>
+        Font style declaration:<br/>
+        p.a{<br/>
+            font-style: "normal";<br/>
+        }<br/>
+        <br/>
+        Font size declaration:<br/>
+        p.a{<br/>
+            font-size: 20px;<br/>
+        }<br/>
+        <br/>
+        Font weight declaration:<br/>
+        p.normal{<br/>
+            font-weight: normal;<br/>
+        }<br/>
+    </p>
+
+    <section>
+        <h1>Lists and Tables</h1>
+
+        <section>
+            <h2>List Types (and their styling) Explained</h2>
+
+            <p>You differentiate between ordered lists (tag: ol) and unordered lists (tag: ul). To put an item in a list, you need to add a list item (li).</p>
+            <p>Description lists (tag: dl) are lists with a description of each term. The term is defined using the dt tag, term explanations are added using the dd tag.</p>
+
+            <h2>Styling Lists</h2>
+
+            <p>A list looks better with bulletpoints or squares. To add them, specify what you would like to add.</p>
+            <p>You should style lists using the list-style tag.</p>
+
+            <dl>Examples:
+                <dt>Circle</dt>
+                <dd>- displays a circle.</dd>
+                <dt>Square</dt>
+                <dd>- displays a square.</dd>
+                <dt>Upper Roman</dt>
+                <dd>- displays (capital) roman numerals.</dd>
+                <dt>Lower Alpha</dt>
+                <dd>- displays numbers that we know (and love).</dd>
+            </dl>
+
+            <p>Positioning lists can be done using list-style-position: inside OR outside.</p>
+            <p>Default settings can be removed. You'd have to set the margin (space) and padding (also the space) to zero and change the list-style-type to zero.</p>
+        </section>
+
+        <section>
+            <h2>HTML Tables (and their styling) explained</h2>
+
+            <p>A table is defined using the table tag. Table rows are defined using the tr tag. Table cells are defined using the td tag. Sometimes, if you have longer lists, you want to have a header. Headers can be defined using the th tag.</p>
+            <dl>Useful Tags:
+                <dt>Caption</dt>
+                <dd>- gives the table a title.</dd>
+                <dt>Colgroup</dt>
+                <dd>- selects a group of one or more columns for formatting.</dd>
+                <dt>Col</dt>
+                <dd>- specifies column properties for each column within a colgroup element.</dd>
+                <dt>thead, tbody, tfoot</dt>
+                <dd>- groups the content of that type in a table.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Borders</h2>
+
+            <p>There are quite a few different border styles. Use these styles by typing "border-style:"</p>
+
+            <ul>
+                <li>dotted</li>
+                <li>dashed</li>
+                <li>solid</li>
+                <li>double</li>
+                <li>groove (3D border, effect depends on border-color value)</li>
+                <li>ridge (3D)</li>
+                <li>inset (3D)</li>
+                <li>outset (3D)</li>
+                <li>none</li>
+                <li>hidden</li>
+            </ul>
+
+            <p>The border width can be specified with the border-width property. (top, right, bottom, left if you want to declare the width of everything in one statement)</p>
+            <p>The border color can be set with the border-color property.</p>
+            <p>You can create individual borders. e.g.: border-(SIDE (left/right/top/bottom))-style: dotted</p>
+            <p>Round borders can be declared using the border-radius property (usually 5px).</p>
+        </section>
+    </section>
+</body>
