@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02 - CSS and Selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="container">
+        <b>CSS</b><br/>
+
+    <p>
+        CSS stands for Cascading Style Sheets. <br/>
+        Every css rule has a selector, a value, a property and a declaration.<br/>
+        <br/>
+
+        h1 // SELECTOR<br/>
+        {<br/>
+            color (property): blue (value);<br/>
+        }<br/>
+        <br/>
+
+        WARNING!<br/>
+        The div element is only a placeholder in the following cases.<br/>
+        <br/>
+        Direct child: Selects all elements that are children of a specified element. (Selects all p's that are children of a div element)<br/>
+        div > p {color: blue;}<br/>
+        <br/>
+        Descendant: Selects all elements that are children of a specific element. (Selects all p's inside div elements)<br/>
+        div p {color: blue;}<br/>
+        <br/>
+        Adjacent sibling: Selects the first p element of a div element. <br/>
+        div + p {color: blue;}<br/>
+        <br/>
+        Sibling: Selects all elements that are siblings of a specific element. (Let's say you have 4 paragraphs. Two within a div tag, two not in a div tag. The two statements not within the div tag will have the color blue.)<br/>
+        div ~ p {color: blue;}<br/>
+        <br/>
+        Colors in a hexadecimal notation:<br/>
+        (opening) h1 style="color:#ff3813;" (closing) h1 <br/>
+        <br/>
+        Declaration for background image: <br/>
+        body{<br/>
+            background-image: url("yes.png");<br/>
+        }<br/>
+        <br/>
+        Text alignation (left, right, center, justify):<br/>
+        h1{<br/>
+            text-align: left;<br/>
+        } <br/>
+        <br/>
+        Text decoration (overline, underline, line-through):<br/>
+        h1{<br/>
+            text-decoration-line: overline;<br/>
+        }<br/>
+        <br/>
+        Text transformation (uppercase, lowercase, capitalize):<br/>
+        h1{<br/>
+            text-transform: uppercase;<br/>
+        }<br/>
+        <br/>
+        Font family declaration: <br/>
+        p.a{ <br/>
+            font-family: "serif"; <br/>
+        }<br/>
+        <br/>
+        Font style declaration:<br/>
+        p.a{<br/>
+            font-style: "normal";<br/>
+        }<br/>
+        <br/>
+        Font size declaration:<br/>
+        p.a{<br/>
+            font-size: 20px;<br/>
+        }<br/>
+        <br/>
+        Font weight declaration:<br/>
+        p.normal{<br/>
+            font-weight: normal;<br/>
+        }<br/>
+    </p>
+    </div>
+</body>

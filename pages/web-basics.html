@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01 - Web Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="container">
+        <p style="margin-top:20px;">        
+            Web Client:
+            The web client is also known as browser. It gets information from the web server (via the internet). The client serves
+            as application software (program designed to carry out a specific task) for accessing the world wide web. 
+            The client does things such as rendering, fancy GUI stuff and it requests a new page when required. <br/>
+        </p>
+    
+        <p>
+            <br/>
+            Process:
+            A URL is entered to the browser, which retrieves information from the browser using the appropriate protocol.
+            Communication between the browser and the web server is encrypted for security/privacy reasons. Once the pages were 
+            retrieved, the rendering engine displays it on the users device. When a hyperlink is clicked, a new resource will be
+            opened. Most browsers have an internal cache to reduce loading times.
+        </p>
+    
+        <p>
+            Web Server:<br/>
+            A webserver is a computer software with underlying hardware that accepts requests in HTTP or HTTPS. It can contain
+            pre-existing files (static content) or the content can be generated at the time of the request (dynamic content).
+            More information to be found below.<br/>
+            <br/>
+            The web server houses HTML content. <br/>
+            <br/>
+            The server side static houses files, which can be retrieved at some point. There are no scripts whatsoever in that type 
+            of webpage.<br/>
+            <br/>
+            Server side dynamics exist too, applying to sites that are powered by scripts to make them dynamic (kind of obvious).<br/> 
+            <br/>
+            Then you also have database driven webpages, which are scripted and have a database behind it. The scripting makes a 
+            query and receives data in return.<br/>
+        </p>
+    
+        <p>
+            The internet was invented by Sir Tim Berners-Lee at the CERN (European Organization for Nuclear Research) at around
+            1989. He had the first World Wide Web Browser and a HTTP server ready by the end of 1990. He also founded the WWC
+            Consortium (W3C), which created XML (Extendible Markup Language). <br/>
+            <br/>
+            W3C recommended replacing HTML with XHTML, which failed and instead HTML5 was developed by global players.
+        </p>
+    
+        <p>
+            'URL' is the abbreviation for Uniform Resource Locator, colloquially known as web address. The purposse of a URL is to
+            identify and locate resources, such as websites, using a protocol and the resource in a network. The syntax is simple:<br/>
+            <br/>
+            PROTOCOL :// PATH ? #<br/>
+            The paths are seperated with a slash, the '?' is a query and # is the fragment.<br/>
+        </p>
+    
+        <p>
+            The correct doctype declaration is "!DOCTYPE html" (don't forget the greater/smaller characters).<br/>
+            <br/>
+            HTML elements have a starting tag, (name) and an ending tag. Void elements do not have end tags and can't house any 
+            content inside it. These elements have attributes and can't be nested.<br/>
+            <br/>
+            The id atribute is a unique ID for a HTML element and must be unique within the HTML document. This attribute is used 
+            to point to a specific style declaration in a style sheet. JavaScript also uses this to access and manipulate the 
+            element with the specific id.<br/> 
+            <br/>
+            <br/>
+            <b>DO NOT FORGET THE GREATER/SMALLER CHARS</b><br/>
+            Special tags are:<br/>
+            img src="IMAGE NAME"<br/>
+            a href="LINK" (TEXT)<br/>
+            meta (NAME)="TYPE"<br/>
+            <br/>
+            How to comment:<br/>
+            !-- (TEXT) --<br/>
+        </p>
+    </div>
+</body>
