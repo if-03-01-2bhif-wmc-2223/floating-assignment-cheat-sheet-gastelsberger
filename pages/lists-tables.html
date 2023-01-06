@@ -9,4 +9,75 @@
 
 <body> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="container">
+        <section>
+            <h1>Lists and Tables</h1>
+    
+            <section>
+                <h2>List Types (and their styling) Explained</h2>
+    
+                <p>You differentiate between ordered lists (tag: ol) and unordered lists (tag: ul). To put an item in a list, you need to add a list item (li).</p>
+                <p>Description lists (tag: dl) are lists with a description of each term. The term is defined using the dt tag, term explanations are added using the dd tag.</p>
+    
+                <h2>Styling Lists</h2>
+    
+                <p>A list looks better with bulletpoints or squares. To add them, specify what you would like to add.</p>
+                <p>You should style lists using the list-style tag.</p>
+    
+                <dl>Examples:
+                    <dt>Circle</dt>
+                    <dd>- displays a circle.</dd>
+                    <dt>Square</dt>
+                    <dd>- displays a square.</dd>
+                    <dt>Upper Roman</dt>
+                    <dd>- displays (capital) roman numerals.</dd>
+                    <dt>Lower Alpha</dt>
+                    <dd>- displays numbers that we know (and love).</dd>
+                </dl>
+    
+                <p>Positioning lists can be done using list-style-position: inside OR outside.</p>
+                <p>Default settings can be removed. You'd have to set the margin (space) and padding (also the space) to zero and change the list-style-type to zero.</p>
+            </section>
+    
+            <section>
+                <h2>HTML Tables (and their styling) explained</h2>
+    
+                <p>A table is defined using the table tag. Table rows are defined using the tr tag. Table cells are defined using the td tag. Sometimes, if you have longer lists, you want to have a header. Headers can be defined using the th tag.</p>
+                <dl>Useful Tags:
+                    <dt>Caption</dt>
+                    <dd>- gives the table a title.</dd>
+                    <dt>Colgroup</dt>
+                    <dd>- selects a group of one or more columns for formatting.</dd>
+                    <dt>Col</dt>
+                    <dd>- specifies column properties for each column within a colgroup element.</dd>
+                    <dt>thead, tbody, tfoot</dt>
+                    <dd>- groups the content of that type in a table.</dd>
+                </dl>
+            </section>
+    
+            <section>
+                <h2>Borders</h2>
+    
+                <p>There are quite a few different border styles. Use these styles by typing "border-style:"</p>
+    
+                <ul>
+                    <li>dotted</li>
+                    <li>dashed</li>
+                    <li>solid</li>
+                    <li>double</li>
+                    <li>groove (3D border, effect depends on border-color value)</li>
+                    <li>ridge (3D)</li>
+                    <li>inset (3D)</li>
+                    <li>outset (3D)</li>
+                    <li>none</li>
+                    <li>hidden</li>
+                </ul>
+    
+                <p>The border width can be specified with the border-width property. (top, right, bottom, left if you want to declare the width of everything in one statement)</p>
+                <p>The border color can be set with the border-color property.</p>
+                <p>You can create individual borders. e.g.: border-(SIDE (left/right/top/bottom))-style: dotted</p>
+                <p>Round borders can be declared using the border-radius property (usually 5px).</p>
+            </section>
+        </section>
+    </div>
 </body>

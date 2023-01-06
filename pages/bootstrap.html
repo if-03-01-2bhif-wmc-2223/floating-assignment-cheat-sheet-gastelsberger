@@ -9,4 +9,143 @@
 
 <body> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="container">
+        <section>
+            <h1>Bootstrap</h1>
+    
+            <section>
+                <h2>Including Bootstrap</h2>
+    
+                <p>In order to include bootstrap, the following statements have to be copied.</p>
+                <p class="insertedFromSomewhere">Copy in the <b>HEAD</b> part: &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"&gt;</p>
+                <p class="insertedFromSomewhere">Copy in the <b>BODY</b> part: &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"&gt;&lt;/script&gt;</p>
+            </section>
+    
+            <section>
+                <h2>Why should you use Bootstrap</h2>
+                
+                <p>Bootstrap is a front-end framework for UIs and themes. This framework is the worlds most popular framework originally developed at Twitter.</p>
+                <p>Responsive web design. This means, that your webpage look good on every device. That is done by recognizing the size and orientation of the visitor's screen and automatically adjust the display.</p>
+            </section>
+    
+            <section>
+                <h2>Tags</h2>
+                <p>To make some text stand out, do: <p class="insertedFromSomewhere">&lt;p class="lead"&gt;</p></p>
+                <p>To highlight some text, do: <p class="insertedFromSomewhere">&lt;mark&gt;</p></p>
+                <p>To cross out some text, do: <p class="insertedFromSomewhere">&lt;del&gt;</p></p>
+                <p>To underline some text, do: <p class="insertedFromSomewhere">&lt;u&gt;</p></p>
+                <p>To "hide" some text, do: <p class="insertedFromSomewhere">&lt;li class="insertedFromSomewhere <b>disabled</b>"blah blah blah&gt;</p></p>
+                <p>To "activate" some text (meaning it will have a nice background), do: <p class="insertedFromSomewhere">&lt;li class="insertedFromSomewhere <b>active</b>"blah blah blah&gt;</p></p>
+            </section>
+    
+            <section>
+                <h2>Contextual Colors</h2>
+                <ul>
+                    <li>primary (blue)</li>
+                    <li>success (green)</li>
+                    <li>info (different green)</li>
+                    <li>warning (brown)</li>
+                    <li>danger (red)</li>
+                    <li>muted (gray)</li>
+                </ul>
+    
+                <p>Using these colors is easy. Type: <p class="insertedFromSomewhere">&lt;p class="text-COLOR"&gt;</p> if you want to use a color as text</p>
+                <p><p class="insertedFromSomewhere">&lt;p class="bg-COLOR"&gt;</p> if you want to use a color as background.</p>
+            </section>
+    
+            <section>
+                <h2>Buttons</h2>
+                <p>To create basic buttons, you should use: <p class="insertedFromSomewhere">&lt;button class="btn btn-default"&gt;Button&lt;/button&gt;</p></p>
+                <p>You can also use buttons to link something. In that case, the same thing as above applies, just with the addition of the role and button attribute. <p class="insertedFromSomewhere">&lt;a href="#" class="btn btn-default" role="button">Link&lt;/a&gt;</p></p>
+    
+                <h4>Contextual Buttons</h4>
+                <p>A contextual button is defined as: <p class="insertedFromSomewhere">&lt;button class="btn btn-danger"&gt;Button&lt;/button&gt;</p></p>
+    
+                <h4>Button Sizes</h4>
+                <p>Button sizes can be changed by adding a btn-(SIZE) to the class: <p class="insertedFromSomewhere">&lt;button class="btn btn-danger btn-xs"&gt;Button&lt;/button&gt;</p></p>
+            </section>
+    
+            <section>
+                <h2>Tables</h2>
+                <p>Tables are covered in the lists and tables section. Here are a few class attributes to improve tables: </p>
+                <p class="insertedFromSomewhere">table, table-striped, table-bordered, table-hover, table-condensed</p>
+            </section>
+    
+            <section>
+                <h2>Lists</h2>
+                <p>The different types of lists were already covered in the lists and tables section (03). </p>
+            </section>
+    
+            <section>
+                <h2>Cards</h2>
+                <p>Cards are flexible and extensible containers, including options for headers, footers, content, etc. They're basically a good-looking box.</p>
+                <p class="insertedFromSomewhere">&lt;div class="card" style="width: 20rem;"&gt;<br>
+                    &lt;img class="card-img-top" src="..." alt="Card image cap"&gt;<br>
+                    &lt;div class="card-body"&gt;<br>
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;<br>
+                      &lt;p class="card-text"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;<br>
+                      &lt;a href="#" class="btn btn-primary"&gt;Go somewhere&lt;/a&gt;<br>
+                      &lt;/div&gt;<br>
+                      &lt;/div&gt;<br>
+                </p>
+            </section>
+    
+            <section>
+                <h2>Grids</h2>
+                <p>Grids are used to create page layouts.</p>
+                <p>A few rules to using grids:</p>
+                <ul>
+                    <li>Rows MUST be placed within a .container or .container-fluid</li>
+                    <li>Content should be placed within columns</li>
+                    <li>Columns are created by specifying the number of (MAX 12) columns you want. For example, three equal columns would use three .col-xs-4</li>
+                    <li>If more than 12 columns are placed in a single row, each group of extra columns will wrap onto a new line.</li>
+                    <li>Grid classes apply to devices with greater screen widths. This means, that .col-md-/* affects styling on medium and large devices if no .col-lg-\* is present.</li>
+                </ul>
+                
+                <h4>Creating the basic structure</h4>
+                <p>Here's the basic structure of a Bootstrap grid: </p>
+                <p class="insertedFromSomewhere">
+                    &lt;div class="container"><br>
+                    &lt;div class="row"><br>
+                    &lt;div class="col-*-*">&lt;/div><br>
+                    &lt;/div><br>
+                    &lt;div class="row"><br>
+                    &lt;div class="col-*-*">&lt;/div><br>
+                    &lt;div class="col-*-*">&lt;/div><br>
+                    &lt;div class="col-*-*">&lt;/div><br>
+                    &lt;/div><br>
+                    &lt;div class="row"><br>
+                          ...<br>
+                          &lt;/div><br>
+                          &lt;/div><br> 
+                </p>
+    
+                <h4>Grid Classes</h4>
+                <p>This framework has four classes: xs (phones), sm (tablets), md (desktops) and lg (large desktops)</p>
+                <p>Here's some example code: </p>
+                <p class="insertedFromSomewhere">
+                    &lt;div class="container"><br>
+                    &lt;div class="row"><br>
+                    &lt;div class="col-md-8 col-sm-8 col-xs-8"><br>
+                    &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p><br>
+                    &lt;/div><br>
+                    &lt;div class="col-md-4 col-sm-4 col-xs-4"><br>
+                    &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et &lt;/p><br>
+                    &lt;/div><br>
+                    &lt;/div><br>
+                    &lt;/div><br>
+                </p>
+            </section>
+    
+            <section>
+                <h2>Images and Figures</h2>
+                <p>Reponsive images are made by using the class .img-fluid. Here are some useful code-snippets:</p>
+                <ul>
+                    <li>Responsive images: <p class="insertedFromSomewhere">&lt;img src="picture of your choice" class="img-responisve" alt="Responsive image"></p></li>
+                    <li>Rounded corners: <p class="insertedFromSomewhere"> &lt;img src="picture of your choice" class="img-rounded" alt="pic with rounded corners"></p></li>
+                    <li>Circle: <p class="insertedFromSomewhere"> &lt;img src="picture of your choice" class="img-circle" alt="pic with rounded corners" width="304" height="236"></p></li>
+                </ul>
+            </section>
+        </section>
+    </div>
 </body>
