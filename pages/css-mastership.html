@@ -12,45 +12,104 @@
     <div class="container">
         <article>
             <h1>CSS Mastership</h1>
-            <!--If you include code-snippets, use the CSS class "insertedFromSomewhere"-->
 
             <section>
                 <h2>Gradients</h2>
-                <p>Syntax:</p>
-                <p class="insertedFromSomewhere">background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</p>
-                <p>Example: </p>
-                <p class="insertedFromSomewhere">background-image: linear-gradient(red, yellow);</p>
-                
+                <p>Gradients allow you to create smooth transitions between two or more colors. There are two types of gradients in CSS: linear and radial.</p>
+
+                <h4>Linear Gradients</h4>
+                <p>A linear gradient is created by specifying the direction of the gradient as an angle, and the colors that should be used at each end of the gradient. The syntax for linear gradients is:</p>
+                <p class="insertedFromSomewhere">background: linear-gradient(angle, color1, color2);</p>
+                <p>where angle is the direction of the gradient, specified in degrees, and color1 and color2 are the colors that should be used at each end of the gradient.</p>
+
+                <h4>Radial Gradients</h4>
+                <p>A radial gradient is created by specifying the shape and size of the gradient, as well as the position of the gradient. The syntax for radial gradients is:</p>
+                <p class="insertedFromSomewhere">background: radial-gradient(shape size at position, start-color, end-color);</p>
+                <p>where shape is either circle or ellipse, size is either closest-side, closest-corner, farthest-side, or farthest-corner, at position specifies the position of the gradient, and start-color and end-color are the colors that should be used at each end of the gradient.</p>
             </section>
 
             <section>
                 <h2>Borders</h2>
-                <p>...</p>
+                <p>Borders are used to add a decorative line around an HTML element. In CSS, you can specify the style, width, and color of a border.</p>
+
+                <h4>Border Style</h4>
+                <p>The style of a border can be specified using the border-style property. The possible values for this property are solid, dotted, dashed, double, groove, ridge, inset, and outset.</p>
+
+                <h4>Border Width</h4>
+                <p>The width of a border can be specified using the border-width property. The value for this property can be specified in pixels (px), ems (em), or rems (rem).</p>
+
+                <h4>Border Color</h4>
+                <p>The color of a border can be specified using the border-color property. The value for this property can be specified using any valid CSS color value, such as a named color, a hexadecimal value, or an RGB value.</p>
+
+                <h4>Border Shorthand</h4>
+                <p>All of the border properties can be combined into a single, shorthand property called border. The syntax for this shorthand property is:</p>
+                <p class="insertedFromSomewhere">border: border-width border-style border-color;</p>
             </section>
 
             <section>
                 <h2>Shadows</h2>
-                <p>...</p>
+                <p>Shadows are used to add a three-dimensional effect to an HTML element. In CSS, you can add a shadow to an element using the box-shadow property.</p>
+
+                <h4>Box Shadow:</h4>
+                <p>The box-shadow property is used to add a shadow to an element. The syntax for this property is:</p>
+
+                <p class="insertedFromSomewhere">box-shadow: horizontal-offset vertical-offset blur spread color;</p>
+                <p>where horizontal-offset and vertical-offset specify the position of the shadow, blur specifies the blur radius of the shadow, spread specifies the size of the shadow, and color specifies the color of the shadow.</p>
             </section>
 
             <section>
                 <h2>2D Transforms</h2>
-                <p>...</p>
+                <p class="insertedFromSomewhere">2D transforms in CSS allow you to manipulate HTML elements in 2D space, including translation, rotation, scaling, and skewing.</p>
+
+                <h4>Translation</h4>
+                <p>Translation moves an element from its current position to a new position. It is done using the "translate" function and takes two arguments, the first for the horizontal movement and the second for the vertical movement.</p>
+                <p class="insertedFromSomewhere">transform: translate(x, y);</p>
+
+                <h4>Rotation</h4>
+                <p>Rotation rotates an element around a specified point. It is done using the "rotate" function and takes one argument, the angle of rotation in degrees.</p>
+                <p class="insertedFromSomewhere">transform: rotate(angle);</p>
+
+                <h4>Scaling</h4>
+                <p>Scaling changes the size of an element. It is done using the "scale" function and takes two arguments, the first for the horizontal scaling and the second for the vertical scaling.</p>
+                <p class="insertedFromSomewhere">transform: scale(x, y);</p>
+
+                <h4>Skewing</h4>
+                <p>Skewing distorts an element along one or both axes. It is done using the "skew" function and takes two arguments, the first for the horizontal skew and the second for the vertical skew.</p>
+                <p class="insertedFromSomewhere">transform: skew(x, y);</p>
             </section>
 
             <section>
                 <h2>3D Transforms</h2>
-                <p>...</p>
+                <p>3D transforms in CSS allow you to manipulate HTML elements in 3D space, including translation, rotation, scaling, and skewing.</p>
+
+                <h4>Translation</h4>
+                <p>Translation moves an element from its current position to a new position. It is done using the "translate3d" function and takes three arguments, the first for the horizontal movement, the second for the vertical movement, and the third for the depth.</p>
+                <p class="insertedFromSomewhere">transform: translate3d(x, y, z);</p>
+                
+                <h4>Rotation</h4>
+                <p>Rotation rotates an element around a specified point. It is done using the "rotate3d" function and takes four arguments, the first three for the axis of rotation, and the fourth for the angle of rotation in degrees.</p>
+                <p class="insertedFromSomewhere">transform: rotate3d(x, y, z, angle);</p>
+                
+                <h4>Scaling</h4>
+                <p>Scaling changes the size of an element. It is done using the "scale3d" function and takes three arguments, the first for the horizontal scaling, the second for the vertical scaling, and the third for the depth scaling.</p>
+                <p class="insertedFromSomewhere">transform: scale3d(x, y, z);</p>
             </section>
 
             <section>
                 <h2>Transitions</h2>
-                <p>...</p>
+                <p>Transitions in CSS allow you to smoothly transition from one state of an element to another. For example, when a button is hovered over, the background color can smoothly transition from one color to another.</p>
+                <p class="insertedFromSomewhere">transition: property duration timing-function delay;</p>
+                <p>The "property" property defines the CSS property that the transition applies to. The "duration" property defines how long the transition takes, in seconds. The "timing-function" property defines the speed of the transition, and the "delay" property defines the delay before the transition begins.</p>
             </section>
 
             <section>
                 <h2>Animations</h2>
-                <p>...</p>
+                <p>Keyframes: Keyframes are the foundation of CSS animations. They define what styles will be applied at specific moments during the animation.</p>
+                <p>Animation Properties: To apply an animation to an element, you need to specify the animation properties on that element.</p>
+                <p>Shortcut Property: You can also use the shorthand animation property to specify all the animation properties in one line.</p>
+                <p>Transform: The transform property is often used in CSS animations to move, rotate, scale, and skew elements.</p>
+                <p>Transitions: Transitions are a simpler way to animate an element from one state to another. They are triggered by a change in CSS property values.</p>
+                <p>Animation Events: You can use JavaScript to trigger events when an animation starts, ends, or repeats.</p>
             </section>
         </article>
     </div>
